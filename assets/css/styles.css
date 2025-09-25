@@ -363,6 +363,89 @@ a {
   transition: all 0.3s ease;
 }
 
+.formations-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formation-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(172, 147, 98, 0.1);
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.formation-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(172, 147, 98, 0.15);
+}
+
+.formation-logo {
+  width: 180px;
+  height: 90px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  background: rgba(172, 147, 98, 0.1);
+  background-color: white;
+}
+
+.formation-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.formation-logo-2 {
+  width: 180px;
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  background: rgba(172, 147, 98, 0.1);
+}
+
+.formation-logo-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.formation-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.formation-date {
+  color: #AC9362;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.formation-description {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
 /*=============== PICKER + CONTENT DISPLAY (PROJECTS) ===============*/
 .floating-picker {
   font-family: "Roboto";
