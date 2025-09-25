@@ -799,30 +799,15 @@ a {
   list-style: none;
   padding: 0;
   margin: 25px 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
 }
 
 .tech-list li {
-  background: none;
-  margin: 0;
+  background: #f8f9fa;
+  margin: 8px 0;
   padding: 8px 15px;
   border-radius: 25px;
   font-size: 0.9rem;
   color: #495057;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex: 0 0 calc(50% - 5px);
-  box-sizing: border-box;
-}
-
-.tech-list li i {
-  color: var(--red-color);
-  font-size: 1.2rem;
-  min-width: 20px;
 }
 
 .skill-level {
@@ -861,84 +846,8 @@ a {
 }
 
 /* =================== CONTACT ===================== */
-.contact-card {
-  background: white;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(172, 147, 98, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(172, 147, 98, 0.15);
-}
-
-.contact-info {
-  text-align: left;
-}
-
-.contact-info h3 {
-  color: #2c3e50;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.social-links {
-  list-style: none;
-  padding: 0;
-}
-
-.social-links li {
-  margin-bottom: 15px;
-}
-
-.social-links a {
-  color: #AC9362;
-  text-decoration: none;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  transition: outline-width 0.3s ease, color 0.3s ease;
-  /* Transition pour l'outline */
-  outline: 2px solid #AC9362;
-  /* Outline de base */
-  padding: 5px;
-  /* Espace pour l'outline */
-  border-radius: 5px;
-  /* Coins arrondis */
-}
-
-.social-links a:hover {
-  color: #b2301f;
-  outline-width: 3px;
-  /* Agrandit l'outline au survol */
-  outline-color: #b2301f;
-  /* Change la couleur au survol */
-}
-
-.social-icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #f8f9fa;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  font-size: 2rem;
-}
-
-.social-links a:hover .social-icon {
-  background-color: #e0e0e0;
-  /* Changement de couleur au survol */
-  transform: scale(1.1);
-  /* Agrandit légèrement la boîte au survol */
-}
-
-.social-name {
-  display: inline-block;
-  vertical-align: middle;
+.contact-form-section {
+  border-right: 3px solid #000;
+  border-top: 3px solid #000;
+  padding-left: 40px;
 }
