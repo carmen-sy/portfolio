@@ -54,7 +54,6 @@ main {
   font-family: "Tinos";
   font-size: var(--normal-font-size);
   background-color: #f4f0ed;
-  overflow-x: hidden;
 }
 
 ul {
@@ -805,7 +804,7 @@ a {
   background: #f8f9fa;
   margin: 8px 0;
   padding: 8px 15px;
-  border-radius: 25px;
+  border-radius: none;
   font-size: 0.9rem;
   color: #495057;
 }
@@ -846,8 +845,3 @@ a {
 }
 
 /* =================== CONTACT ===================== */
-.contact-form-section {
-  border-right: 3px solid #000;
-  border-top: 3px solid #000;
-  padding-left: 40px;
-}
