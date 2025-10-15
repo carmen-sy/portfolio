@@ -456,7 +456,7 @@ a {
 
 /*=============== PICKER + CONTENT DISPLAY (PROJECTS) ===============*/
 .floating-picker {
-  font-family: "Alan Sans";
+  font-family: "Lora";
   display: inline-flex;
   gap: 12px;
   align-items: center;
@@ -805,9 +805,11 @@ a {
   flex-direction: column;
   justify-content: center;
   min-height: 700px;
+  top: 1;
 }
 
 .social-title {
+  font-family: "Raleway";
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -825,17 +827,17 @@ a {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0);
   border-radius: 15px;
   color: black;
   text-decoration: none;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.23);
 }
 
 .social-link:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(58, 95, 160, 0.203);
   transform: scale(1.05);
   color: black;
 }
@@ -852,7 +854,7 @@ a {
   width: 50px;
   height: 50px;
   background: white;
-  color: #AC9362;
+  color: #88A5E0;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -876,17 +878,45 @@ a {
   font-weight: 600;
 }
 
+/* separation */
+.social-card .col-lg-5 {
+  position: relative;
+}
+
+.social-card .col-lg-5::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 80%;
+  background-color: black;
+}
+
+/* Optionnel : ajouter un peu d’espace */
+.social-card .social-section {
+  padding-right: 30px;
+}
+
+.social-card .form-section {
+  padding-left: 30px;
+}
+
+@media (max-width: 991px) {
+  .social-card .col-lg-5 {
+    border-right: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
 /* Section Formulaire */
 .form-section {
   padding: 60px 40px;
   border-left: 2px solid #e0e0e0;
-}
-
-.form-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 30px;
 }
 
 .form-group {
@@ -895,7 +925,7 @@ a {
 
 .form-label {
   font-weight: 600;
-  color: #fff;
+  color: black;
   margin-bottom: 8px;
   font-size: 0.95rem;
 }
@@ -914,6 +944,7 @@ a {
 }
 
 .contact-btn {
+  font-family: "Raleway";
   background: linear-gradient(135deg, #4361a7, #0B1838);
   color: white;
   border: none;
@@ -957,7 +988,7 @@ a {
 
 /* ======== FOOTER ======== */
 .footer {
-  font-family: "Tinos", sans-serif;
+  font-family: "Merriweather", sans-serif;
   background-color: #0B1838;
   color: white;
   padding: 25px 15px;
