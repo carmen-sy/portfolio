@@ -17,6 +17,27 @@ if (navClose) {
   });
 }
 
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      if (window.innerWidth < 1150) {
+        e.preventDefault();
+        e.stopPropagation();
+        const dropdown = this.parentElement;
+        dropdown.classList.toggle('active');
+      }
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth < 1150) {
+      document.querySelectorAll('.dropdown').forEach(dropdown => {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('active');
+        }
+      });
+    }
+  });
+
 document.querySelectorAll('[class*="-picker"]').forEach((picker) => {
   const buttons = picker.querySelectorAll('[class*="-btn"]');
 
