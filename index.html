@@ -183,14 +183,28 @@
 
           <br />
 
+          <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+            <div class="timeline-dots">
+              <div class="timeline-dot-wrapper">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-dot-wrapper">
+                <div class="timeline-dot"></div>
+              </div>
+            </div>
+          </div>
+
           <div class="row justify-content-center">
             <div class="formations-container">
               <div class="formations-grid">
                 <!-- Card 1: Baccalauréat -->
                 <div
                   class="formation-card"
-                  data-aos="fade-up-right"
+                  data-aos="fade-down"
                   data-aos-delay="200"
+                  data-aos-anchor=".timeline-wrapper"
+                  data-aos-anchor-placement="top-center"
                 >
                   <div class="formation-logo">
                     <img src="img/logo clairf.png" alt="Logo Clairefontaine" />
@@ -198,27 +212,26 @@
                   <h3 class="formation-title">
                     La Clairefontaine Antananarivo
                   </h3>
-                  <p class="formation-date">
-                    2024 - Baccalauréat Série Générale
-                  </p>
+                  <p class="formation-date">2023-2024 | Baccalauréat</p>
                   <p class="formation-description">
-                    Obtention de mon diplôme à Madagascar avec les spécialités
-                    Mathématiques et HGGSP (Histoire, Géographie, Géopolitique
-                    et Sciences Politiques)
+                    Obtention de mon baccalauréat en série générale avec les
+                    spécialités Mathématiques et HGGSP (Histoire, Géographie,
+                    Géopolitique et Sciences Politiques)
                   </p>
                 </div>
 
                 <!-- Card 2: BTS SIO -->
                 <div
                   class="formation-card"
-                  data-aos="fade-down-left"
-                  data-aos-delay="200"
+                  data-aos="fade-down"
+                  data-aos-delay="300"
+                  data-aos-anchor=".timeline-wrapper"
                 >
                   <div class="formation-logo-2">
                     <img src="img/mcci logo.jpeg" alt="Logo MCCI" />
                   </div>
                   <h3 class="formation-title">MCCI Business School</h3>
-                  <p class="formation-date">En cours (2024-2026) - BTS SIO</p>
+                  <p class="formation-date">2024-2026 | BTS SIO</p>
                   <p class="formation-description">
                     Actuellement en 2e année de BTS Services Informatiques aux
                     Organisations, option Solutions Logicielles et Applications
@@ -285,25 +298,29 @@
                         href="https://carmenpjsupercar.alwaysdata.net/Supercar/supercar-client/"
                         class="project-btn project-btn-1"
                       >
-                        <i class="fas fa-eye"></i>
+                        <i class="ri-arrow-right-circle-line"></i>
                         Client
                       </a>
                       <a
                         href="https://carmenpjsupercar.alwaysdata.net/Supercar/supercar-admin/"
                         class="project-btn project-btn-1"
                       >
-                        <i class="fas fa-eye"></i>
+                        <i class="ri-arrow-right-circle-line"></i>
                         Admin
                       </a>
                       <a href="#" class="project-btn project-btn-1">
-                        <i class="ri-file-pdf-2-fill"></i>
+                        <i class="ri-file-pdf-2-line"></i>
                         Rapport
                       </a>
                     </div>
                     <div class="project-footer-2">
                       <a href="#" class="project-btn project-btn-1">
-                        <i class="ri-slideshow-2-fill"></i>
+                        <i class="ri-slideshow-2-line"></i>
                         Présentation
+                      </a>
+                      <a href="#" class="project-btn project-btn-1">
+                        <i class="ri-file-info-line"></i>
+                        Fiche descriptive
                       </a>
                     </div>
                   </div>
@@ -328,20 +345,21 @@
                     </p>
                     <div class="project-tech">
                       <span class="tech-tag">Java</span>
+                      <span class="tech-tag">JavaFX</span>
                     </div>
                     <div class="project-footer">
                       <a href="#" class="project-btn project-btn-1">
-                        <i class="fas fa-eye"></i>
+                        <i class="ri-arrow-right-circle-line"></i>
                         Démo
                       </a>
                       <a href="#" class="project-btn project-btn-1">
-                        <i class="ri-file-pdf-2-fill"></i>
+                        <i class="ri-file-pdf-2-line"></i>
                         Rapport
                       </a>
                     </div>
                     <div class="project-footer-2">
                       <a href="#" class="project-btn project-btn-1">
-                        <i class="ri-slideshow-2-fill"></i>
+                        <i class="ri-slideshow-2-line"></i>
                         Présentation
                       </a>
                     </div>
@@ -358,13 +376,13 @@
                 >
                   <div class="project-card-2 professional-card">
                     <div class="project-header">
-                      <h4 class="project-title">Stage de 1e année</h4>
+                      <h4 class="project-title">CRM (Stage 1e année)</h4>
                       <span class="project-category-2">En entreprise</span>
                     </div>
                     <p class="project-description">
-                      Développement fullstack d'un CRM à <b>Acensi Mauritius</b>
-                      (Customer Relationship Management) sur la partie "Project"
-                      et "Proposal".
+                      Développement fullstack d'un CRM (Customer Relationship
+                      Management) à <b>Acensi Mauritius</b>
+                      sur la partie "Project" et "Proposal".
                     </p>
                     <div class="project-tech">
                       <span class="tech-tag-2"
@@ -402,7 +420,10 @@
                         <i class="ri-slideshow-2-fill"></i>
                         Présentation
                       </a>
-                      <a href="#" class="project-btn project-btn-2">
+                      <a
+                        href="http://localhost:4200/dashboard/deals-dashboard"
+                        class="project-btn project-btn-2"
+                      >
                         <i class="fas fa-eye"></i>
                         Démo
                       </a>
@@ -466,7 +487,7 @@
             </div>
           </div>
         </div>
-      </section>  
+      </section>
 
       <!-- ================== COMPETENCES ================== -->
       <section id="skills" class="py-5">
@@ -475,90 +496,129 @@
           <div class="row">
             <div class="col">
               <h2 id="title" class="display-4 fw-bold mb-4">Compétences</h2>
-              <h5 id="subtitle" class="display-6 fw-bold mb-4" data-aos="fade-right">
+              <h5
+                id="subtitle"
+                class="display-6 fw-bold mb-4"
+                data-aos="fade-right"
+              >
                 <i class="ri-corner-down-right-fill"></i> Compétences Techniques
               </h5>
             </div>
           </div>
 
-          <!-- Compétences techniques -->
-          <div class="row g-4">
-            <!-- Frontend -->
-            <div
-              class="col-lg-4 col-md-6 col-sm-11"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="card skill-card frontend-card">
-                <div class="skill-icon">
-                  <i class="ri-computer-fill"></i>
+          <br />
+
+          <!-- 4 cartes : 2 en haut, 2 en bas + ligne centrale -->
+          <div class="skills-grid-container position-relative">
+            <div class="vertical-divider"></div>
+            <div class="row g-4 mb-4">
+              <!-- Frontend -->
+              <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                <div class="card skill-card frontend-card h-100">
+                  <div class="skill-icon">
+                    <i class="ri-computer-fill"></i>
+                  </div>
+                  <h3 class="skill-title">Frontend</h3>
+                  <ul class="tech-list row g-2">
+                    <div class="col-6">
+                      <li><i class="ri-html5-fill"></i> HTML</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="ri-css3-fill"></i> CSS</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="ri-bootstrap-fill"></i> Bootstrap</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="ri-javascript-fill"></i> JavaScript</li>
+                    </div>
+                  </ul>
                 </div>
-                <h3 class="skill-title">Frontend</h3>
-                <ul class="tech-list row g-2">
-                  <div class="col-6">
-                    <li><i class="ri-html5-fill"></i> HTML</li>
+              </div>
+
+              <!-- Backend -->
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                <div class="card skill-card backend-card h-100">
+                  <div class="skill-icon">
+                    <i class="ri-code-box-fill"></i>
                   </div>
-                  <div class="col-6">
-                    <li><i class="ri-css3-fill"></i> CSS</li>
-                  </div>
-                  <div class="col-6">
-                    <li><i class="ri-bootstrap-fill"></i> Bootstrap</li>
-                  </div>
-                </ul>
+                  <h3 class="skill-title">Backend</h3>
+                  <ul class="tech-list row g-2">
+                    <div class="col-6">
+                      <li><i class="ri-java-line"></i> Java</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="fa-brands fa-php"></i> PHP</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="fa-brands fa-python"></i> Python</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="ri-nodejs-line"></i> Node.js</li>
+                    </div>
+                  </ul>
+                </div>
               </div>
             </div>
 
-            <!-- Backend -->
-            <div
-              class="col-lg-4 col-md-6 col-sm-11"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="card skill-card backend-card">
-                <div class="skill-icon">
-                  <i class="ri-code-box-fill"></i>
+            <!-- Ligne 2 : 2 cartes -->
+            <div class="row g-4">
+              <!-- Base de données -->
+              <div class="col-lg-6" data-aos="fade-right" data-aos-delay="150">
+                <div class="card skill-card database-card h-100">
+                  <div class="skill-icon">
+                    <i class="ri-database-2-fill"></i>
+                  </div>
+                  <h3 class="skill-title">Base de données</h3>
+                  <ul class="tech-list row g-2">
+                    <div class="col-6">
+                      <li><i class="fa-solid fa-server"></i> MySQL</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="ri-database-fill"></i> PostgreSQL</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="ri-database-line"></i> MongoDB</li>
+                    </div>
+                  </ul>
                 </div>
-                <h3 class="skill-title">Backend</h3>
-                <ul class="tech-list row g-2">
-                  <div class="col-6">
-                    <li><i class="ri-java-line"></i> Java</li>
-                  </div>
-                  <div class="col-6">
-                    <li><i class="fa-brands fa-php"></i> PHP</li>
-                  </div>
-                  <div class="col-6">
-                    <li><i class="fa-brands fa-python"></i> Python</li>
-                  </div>
-                </ul>
               </div>
-            </div>
 
-            <!-- Base de données -->
-            <div
-              class="col-lg-4 col-md-6 col-sm-11"
-              data-aos="fade-up"
-              data-aos-delay="350"
-            >
-              <div class="card skill-card database-card">
-                <div class="skill-icon">
-                  <i class="ri-database-2-fill"></i>
+              <!-- Outils & Méthodologies -->
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
+                <div class="card skill-card tools-card h-100">
+                  <div class="skill-icon">
+                    <i class="ri-tools-fill"></i>
+                  </div>
+                  <h3 class="skill-title">Outils & Méthodes</h3>
+                  <ul class="tech-list row g-2">
+                    <div class="col-6">
+                      <li><i class="ri-git-branch-fill"></i> Git</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="ri-terminal-box-fill"></i> VS Code</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="ri-layout-masonry-fill"></i> Agile</li>
+                    </div>
+                    <div class="col-6">
+                      <li><i class="ri-file-code-fill"></i> REST API</li>
+                    </div>
+                  </ul>
                 </div>
-                <h3 class="skill-title">Base de données</h3>
-                <ul class="tech-list row g-2">
-                  <div class="col-6">
-                    <li><i class="fa-solid fa-server"></i> MySQL</li>
-                  </div>
-                  <div class="col-6">
-                    <li><i class="ri-database-fill"></i> PostgreSQL</li>
-                  </div>
-                </ul>
               </div>
             </div>
           </div>
 
+          <br /><br />
+
           <!-- GLPI -->
           <section id="glpi" class="py-5">
-            <h2 id="subtitle" class="display-6 fw-bold mb-4"data-aos="fade-right">
+            <h2
+              id="subtitle"
+              class="display-6 fw-bold mb-4"
+              data-aos="fade-right"
+            >
               <i class="ri-corner-down-right-fill"></i> GLPI (Gestionnaire de
               Parc Informatique)
             </h2>
@@ -577,11 +637,91 @@
                     des changements, ainsi que la gestion des demandes de
                     service.
                   </h5>
+                </div>
 
-                  <br />
+                <br />
 
-                  <div class="text-center">
-                    <h5 class="glpi-theme"><u>Utilisation :</u> ...</h5>
+                <div
+                  class="row g-4 justify-content-center"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                >
+                  <!-- Card 1 -->
+                  <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="card-icon">
+                        <i class="ri-hard-drive-2-fill"></i>
+                      </div>
+                      <h4 class="card-title">Installation et Configuration</h4>
+                      <p class="card-text">
+                        Mise en place du GLPI, configuration initiale et
+                        paramétrage de la base de données.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="card-icon">
+                        <i class="ri-ticket-2-fill"></i>
+                      </div>
+                      <h4 class="card-title">Gestion des Tickets</h4>
+                      <p class="card-text">
+                        Création de tickets, suivi et résolution des incidents
+                        informatiques.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="card-icon">
+                        <i class="ri-mac-line"></i>
+                      </div>
+                      <h4 class="card-title">Gestion du Parc</h4>
+                      <p class="card-text">
+                        Inventaire complet du matériel et des logiciels de
+                        l'entreprise.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+
+                <div
+                  class="row g-5 justify-content-center"
+                  data-aos="fade-left"
+                  data-aos-duration="650"
+                >
+                  <!-- Card 1 -->
+                  <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="card-icon-2">
+                        <i class="ri-user-line"></i>
+                      </div>
+                      <h4 class="card-title">Gestion des Utilisateurs</h4>
+                      <p class="card-text">
+                        Création et gestion des comptes utilisateurs et
+                        attribution des droits d'accès.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="card-icon-2">
+                        <i class="ri-file-line"></i>
+                      </div>
+                      <h4 class="card-title">Rapports & Statistiques</h4>
+                      <p class="card-text">
+                        Génération de rapports sur les tickets afin d'évaluer la
+                        performance du support informatique.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -594,7 +734,11 @@
           <section id="vtech" class="py-4">
             <div class="row mt-5">
               <div class="col-lg col-md-10 col-sm-11">
-                <h2 id="subtitle" class="display-6 fw-bold mb-4" data-aos="fade-right">
+                <h2
+                  id="subtitle"
+                  class="display-6 fw-bold mb-4"
+                  data-aos="fade-right"
+                >
                   <i class="ri-corner-down-right-fill"></i>
                   Veille technologique
                 </h2>
@@ -841,7 +985,7 @@
 
       <footer class="footer">
         <div class="footer-container">
-          <p>&copy; 2025 Carmen. Tous droits réservés.</p>
+          <p>&copy; 2025 Carmen Shum. Tous droits réservés.</p>
         </div>
       </footer>
 
