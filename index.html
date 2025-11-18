@@ -62,27 +62,24 @@
             </li>
 
             <li class="nav__item dropdown">
-              <!-- Lien principal vers la section générale "Compétences" -->
               <a href="#skills" class="nav__link main-link">
                 <i class="ri-arrow-down-line"></i>
                 <span>Compétences</span>
               </a>
 
-              <!-- Sous-menu -->
+              <!-- Dropdown -->
               <ul class="dropdown-menu">
                 <li>
                   <a href="#skills" class="dropdown-link">
-                    <i class="ri-code-s-slash-line"></i> Compétences techniques
+                    Compétences techniques
                   </a>
                 </li>
                 <li>
-                  <a href="#glpi" class="dropdown-link">
-                    <i class="ri-database-2-line"></i> GLPI
-                  </a>
+                  <a href="#glpi" class="dropdown-link"> GLPI </a>
                 </li>
                 <li>
                   <a href="#vtech" class="dropdown-link">
-                    <i class="ri-lightbulb-flash-line"></i> Veille technologique
+                    Veille technologique
                   </a>
                 </li>
               </ul>
@@ -99,6 +96,16 @@
           <!-- Close button -->
           <div class="nav__close" id="nav-close">
             <i class="ri-close-large-line"></i>
+          </div>
+
+          <div class="nav-social">
+            <a
+              href="https://www.github.com/carmen-sy"
+              target="_blank"
+              class="nav__social-link"
+            >
+              <i class="ri-github-line"></i>
+            </a>
           </div>
         </div>
 
@@ -144,11 +151,13 @@
                 </p>
 
                 <div class="hero-social">
-                  <a href="https://github.com/carmen-sy" target="_blank">
-                    <i class="ri-github-fill"></i>
-                  </a>
-                  <a href="files/CV - Carmen.pdf" target="_blank">
-                    <i class="ri-file-text-fill"></i>
+                  <a
+                    href="files/CV - Carmen.pdf"
+                    target="_blank"
+                    class="cv-button"
+                  >
+                    <i class="ri-file-3-line"></i>
+                    <span>Voir mon CV</span>
                   </a>
                 </div>
               </div>
@@ -203,8 +212,6 @@
                   class="formation-card"
                   data-aos="fade-down"
                   data-aos-delay="200"
-                  data-aos-anchor=".timeline-wrapper"
-                  data-aos-anchor-placement="top-center"
                 >
                   <div class="formation-logo">
                     <img src="img/logo clairf.png" alt="Logo Clairefontaine" />
@@ -420,13 +427,13 @@
                         <i class="ri-slideshow-2-fill"></i>
                         Présentation
                       </a>
-                      <a
+                      <!-- <a
                         href="http://localhost:4200/dashboard/deals-dashboard"
                         class="project-btn project-btn-2"
                       >
                         <i class="fas fa-eye"></i>
                         Démo
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </div>
@@ -625,85 +632,45 @@
 
             <div class="row">
               <div class="col-lg col-md-10 col-sm-11">
-                <div class="glpi-1" data-aos="fade-right">
-                  <h5 class="glpi-def">
+                <div class="glpi-def" data-aos="fade-right">
+                  <h5>
                     <u><b>Définition :</b></u
                     ><br />
                     GLPI (Gestionnaire Libre de Parc Informatique) est une
                     application open-source de gestion des services
                     informatiques qui permet aux organisations de gérer
-                    efficacement leurs ressources informatiques, y compris le
-                    suivi des actifs, la gestion des incidents, des problèmes et
-                    des changements, ainsi que la gestion des demandes de
-                    service.
+                    efficacement leurs ressources informatiques.
                   </h5>
                 </div>
 
-                <br />
+                <br /><br />
 
                 <div
                   class="row g-4 justify-content-center"
                   data-aos="fade-right"
-                  data-aos-duration="500"
+                  data-aos-duration="600"
                 >
                   <!-- Card 1 -->
                   <div class="col-md-4">
                     <div class="competence-card">
-                      <div class="card-icon">
+                      <div class="glpi-icon">
                         <i class="ri-hard-drive-2-fill"></i>
                       </div>
-                      <h4 class="card-title">Installation et Configuration</h4>
-                      <p class="card-text">
+                      <h4 class="glpi-title">Installation et Configuration</h4>
+                      <p class="glpi-text">
                         Mise en place du GLPI, configuration initiale et
                         paramétrage de la base de données.
                       </p>
                     </div>
                   </div>
 
-                  <!-- Card 2 -->
                   <div class="col-md-4">
                     <div class="competence-card">
-                      <div class="card-icon">
-                        <i class="ri-ticket-2-fill"></i>
-                      </div>
-                      <h4 class="card-title">Gestion des Tickets</h4>
-                      <p class="card-text">
-                        Création de tickets, suivi et résolution des incidents
-                        informatiques.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Card 3 -->
-                  <div class="col-md-4">
-                    <div class="competence-card">
-                      <div class="card-icon">
-                        <i class="ri-mac-line"></i>
-                      </div>
-                      <h4 class="card-title">Gestion du Parc</h4>
-                      <p class="card-text">
-                        Inventaire complet du matériel et des logiciels de
-                        l'entreprise.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <br />
-
-                <div
-                  class="row g-5 justify-content-center"
-                  data-aos="fade-left"
-                  data-aos-duration="650"
-                >
-                  <!-- Card 1 -->
-                  <div class="col-md-4">
-                    <div class="competence-card">
-                      <div class="card-icon-2">
+                      <div class="glpi-icon-2">
                         <i class="ri-user-line"></i>
                       </div>
-                      <h4 class="card-title">Gestion des Utilisateurs</h4>
-                      <p class="card-text">
+                      <h4 class="glpi-title">Gestion des Utilisateurs</h4>
+                      <p class="glpi-text">
                         Création et gestion des comptes utilisateurs et
                         attribution des droits d'accès.
                       </p>
@@ -711,19 +678,68 @@
                   </div>
 
                   <!-- Card 2 -->
-                  <div class="col-md-4">
+                  <!-- <div class="col-md-4">
                     <div class="competence-card">
-                      <div class="card-icon-2">
+                      <div class="glpi-icon">
+                        <i class="ri-ticket-2-fill"></i>
+                      </div>
+                      <h4 class="glpi-title">Gestion des Tickets</h4>
+                      <p class="glpi-text">
+                        Création de tickets, suivi et résolution des incidents
+                        informatiques.
+                      </p>
+                    </div>
+                  </div> -->
+
+                  <!-- Card 3 -->
+                  <!-- <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="glpi-icon">
+                        <i class="ri-mac-line"></i>
+                      </div>
+                      <h4 class="glpi-title">Gestion du Parc</h4>
+                      <p class="glpi-text">
+                        Inventaire complet du matériel et des logiciels de
+                        l'entreprise.
+                      </p>
+                    </div>
+                  </div>
+                </div> -->
+                </div>
+
+                <!-- <div
+                  class="row g-5 justify-content-center"
+                  data-aos="fade-left"
+                  data-aos-duration="650"
+                >
+                  <!- Card 1 -->
+                <!-- <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="glpi-icon-2">
+                        <i class="ri-user-line"></i>
+                      </div>
+                      <h4 class="glpi-title">Gestion des Utilisateurs</h4>
+                      <p class="glpi-text">
+                        Création et gestion des comptes utilisateurs et
+                        attribution des droits d'accès.
+                      </p>
+                    </div>
+                  </div> -->
+
+                <!-- Card 2 -->
+                <!-- <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="glpi-icon-2">
                         <i class="ri-file-line"></i>
                       </div>
-                      <h4 class="card-title">Rapports & Statistiques</h4>
-                      <p class="card-text">
+                      <h4 class="glpi-title">Rapports & Statistiques</h4>
+                      <p class="glpi-text">
                         Génération de rapports sur les tickets afin d'évaluer la
                         performance du support informatique.
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </section>
@@ -742,13 +758,13 @@
                   <i class="ri-corner-down-right-fill"></i>
                   Veille technologique
                 </h2>
-                <div class="vtech-1" data-aos="fade-up">
+                <div class="vtech" data-aos="fade-up">
                   <h5 class="vtech-def">
                     <u><b>Définition :</b></u
                     ><br />
                     Une veille technologique permet de surveiller les évolutions
-                    d'un thème spécifique afin de rester informé des nouveautés
-                    de ce thème.
+                    d'un thème spécifique afin de rester informé à propos de ce
+                    thème.
                   </h5>
 
                   <br />
