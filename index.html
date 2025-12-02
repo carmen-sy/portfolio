@@ -271,9 +271,7 @@
                 <button class="floating-btn" data-brand="formation">
                   En formation
                 </button>
-                <button class="floating-btn" data-brand="entreprise">
-                  En entreprise
-                </button>
+                <button class="floating-btn" data-brand="stage">Stage</button>
               </div>
             </div>
           </div>
@@ -383,8 +381,8 @@
                 >
                   <div class="project-card-2 professional-card">
                     <div class="project-header">
-                      <h4 class="project-title">CRM (Stage 1e année)</h4>
-                      <span class="project-category-2">En entreprise</span>
+                      <h4 class="project-title">Projet CRM</h4>
+                      <span class="project-category-2">Stage</span>
                     </div>
                     <p class="project-description">
                       Développement fullstack d'un CRM (Customer Relationship
@@ -421,19 +419,19 @@
                     </div>
                     <div class="project-footer-2">
                       <a
-                        href="https://www.canva.com/design/DAGzBhdQ0zo/3DUOKKx06pCu0a7xCQm9vg/view?utm_content=DAGzBhdQ0zo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3316e9344e"
+                        href="https://www.canva.com/design/DAG5h7ygQTk/tU2pEpyamXk_lDgWkGhCCQ/view?utm_content=DAG5h7ygQTk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h315f7911a7"
                         class="project-btn project-btn-2"
                       >
                         <i class="ri-slideshow-2-fill"></i>
                         Présentation
                       </a>
-                      <!-- <a
+                      <a
                         href="http://localhost:4200/dashboard/deals-dashboard"
                         class="project-btn project-btn-2"
                       >
                         <i class="fas fa-eye"></i>
                         Démo
-                      </a> -->
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -515,7 +513,6 @@
 
           <br />
 
-          <!-- 4 cartes : 2 en haut, 2 en bas + ligne centrale -->
           <div class="skills-grid-container position-relative">
             <div class="vertical-divider"></div>
             <div class="row g-4 mb-4">
@@ -527,17 +524,20 @@
                   </div>
                   <h3 class="skill-title">Frontend</h3>
                   <ul class="tech-list row g-2">
-                    <div class="col-6">
+                    <div class="col-4">
                       <li><i class="ri-html5-fill"></i> HTML</li>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                       <li><i class="ri-css3-fill"></i> CSS</li>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                       <li><i class="ri-bootstrap-fill"></i> Bootstrap</li>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                       <li><i class="ri-javascript-fill"></i> JavaScript</li>
+                    </div>
+                    <div class="col-4">
+                      <li><i class="ri-angularjs-fill"></i> AngularJS</li>
                     </div>
                   </ul>
                 </div>
@@ -560,9 +560,6 @@
                     <div class="col-6">
                       <li><i class="fa-brands fa-python"></i> Python</li>
                     </div>
-                    <div class="col-6">
-                      <li><i class="ri-nodejs-line"></i> Node.js</li>
-                    </div>
                   </ul>
                 </div>
               </div>
@@ -583,9 +580,6 @@
                     </div>
                     <div class="col-6">
                       <li><i class="ri-database-fill"></i> PostgreSQL</li>
-                    </div>
-                    <div class="col-6">
-                      <li><i class="ri-database-line"></i> MongoDB</li>
                     </div>
                   </ul>
                 </div>
@@ -664,6 +658,56 @@
                     </div>
                   </div>
 
+                  <!-- <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="glpi-icon-2">
+                        <i class="ri-user-line"></i>
+                      </div>
+                      <h4 class="glpi-title">Gestion des Utilisateurs</h4>
+                      <p class="glpi-text">
+                        Création et gestion des comptes utilisateurs et
+                        attribution des droits d'accès.
+                      </p>
+                    </div>
+                  </div> -->
+
+                  <!-- Card 2 -->
+                  <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="glpi-icon">
+                        <i class="ri-ticket-2-fill"></i>
+                      </div>
+                      <h4 class="glpi-title">Gestion des Tickets</h4>
+                      <p class="glpi-text">
+                        Création de tickets, suivi et résolution des incidents
+                        informatiques.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="col-md-4">
+                    <div class="competence-card">
+                      <div class="glpi-icon">
+                        <i class="ri-mac-line"></i>
+                      </div>
+                      <h4 class="glpi-title">Gestion du Parc</h4>
+                      <p class="glpi-text">
+                        Inventaire complet du matériel et des logiciels de
+                        l'entreprise.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+
+                <div
+                  class="row g-5 justify-content-center"
+                  data-aos="fade-left"
+                  data-aos-duration="650"
+                >
+                  <!-- Card 1 -->
                   <div class="col-md-4">
                     <div class="competence-card">
                       <div class="glpi-icon-2">
@@ -678,59 +722,10 @@
                   </div>
 
                   <!-- Card 2 -->
-                  <!-- <div class="col-md-4">
-                    <div class="competence-card">
-                      <div class="glpi-icon">
-                        <i class="ri-ticket-2-fill"></i>
-                      </div>
-                      <h4 class="glpi-title">Gestion des Tickets</h4>
-                      <p class="glpi-text">
-                        Création de tickets, suivi et résolution des incidents
-                        informatiques.
-                      </p>
-                    </div>
-                  </div> -->
-
-                  <!-- Card 3 -->
-                  <!-- <div class="col-md-4">
-                    <div class="competence-card">
-                      <div class="glpi-icon">
-                        <i class="ri-mac-line"></i>
-                      </div>
-                      <h4 class="glpi-title">Gestion du Parc</h4>
-                      <p class="glpi-text">
-                        Inventaire complet du matériel et des logiciels de
-                        l'entreprise.
-                      </p>
-                    </div>
-                  </div>
-                </div> -->
-                </div>
-
-                <!-- <div
-                  class="row g-5 justify-content-center"
-                  data-aos="fade-left"
-                  data-aos-duration="650"
-                >
-                  <!- Card 1 -->
-                <!-- <div class="col-md-4">
+                  <div class="col-md-4">
                     <div class="competence-card">
                       <div class="glpi-icon-2">
-                        <i class="ri-user-line"></i>
-                      </div>
-                      <h4 class="glpi-title">Gestion des Utilisateurs</h4>
-                      <p class="glpi-text">
-                        Création et gestion des comptes utilisateurs et
-                        attribution des droits d'accès.
-                      </p>
-                    </div>
-                  </div> -->
-
-                <!-- Card 2 -->
-                <!-- <div class="col-md-4">
-                    <div class="competence-card">
-                      <div class="glpi-icon-2">
-                        <i class="ri-file-line"></i>
+                        <i class="ri-bar-chart-2-line"></i>
                       </div>
                       <h4 class="glpi-title">Rapports & Statistiques</h4>
                       <p class="glpi-text">
@@ -739,7 +734,7 @@
                       </p>
                     </div>
                   </div>
-                </div> -->
+                </div>
               </div>
             </div>
           </section>
@@ -906,7 +901,7 @@
 
                     <!-- Email -->
                     <a
-                      href="mailto:carmen.shumyune8@gmail.com"
+                      href="mailto:carmenshumyune2@gmail.com"
                       class="social-link"
                     >
                       <div class="social-icon">
@@ -915,7 +910,7 @@
                       <div class="social-info">
                         <div class="social-label">Email</div>
                         <div class="social-value">
-                          carmen.shumyune8@gmail.com
+                          carmenshumyune2@gmail.com
                         </div>
                       </div>
                       <i class="ri-arrow-right-line"></i>

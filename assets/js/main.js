@@ -72,7 +72,7 @@ filterButtons.forEach((button) => {
         card.parentElement.style.display = "block";
       } else if (
         (filter === "formation" && category === "En formation") ||
-        (filter === "entreprise" && category === "En entreprise")
+        (filter === "stage" && category === "Stage")
       ) {
         card.parentElement.style.display = "block";
       } else {
