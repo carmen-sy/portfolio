@@ -1084,7 +1084,7 @@
     text-decoration: underline;
   }
 
-  /* ===================== SKILLS ==================== */
+  /* ===================== COMPETENCES ==================== */
   /* === GRILLE 4 CARTES + LIGNE CENTRALE === */
   .skills-grid-container {
     position: relative !important;
@@ -1154,9 +1154,42 @@
   .frontend-card .skill-icon {
     color: #E34F26 !important;
   }
+  /* ICON COLORS */
+  .ri-html5-fill {
+    color: #E34F26 !important;
+  }
+
+  .ri-css3-fill {
+    color:#0073ff !important;
+  }
+
+  .ri-bootstrap-fill {
+    color: #7952B3 !important;
+  }
+
+  .ri-javascript-fill {
+    color: #F0DB4F !important;
+  }
+
+  .ri-angularjs-fill {
+    color: #DD0031 !important;
+  }
 
   .backend-card .skill-icon {
     color: #4B8BBE !important;
+  }
+
+  /* ICON COLORS */
+  .ri-java-line {
+    color: #4B8BBE !important;
+  }
+
+  .fa-php {
+    color: #787CB5 !important;
+  }
+
+  .fa-python {
+    color: #FFD43B !important;
   }
 
   .database-card .skill-icon {
@@ -1180,7 +1213,7 @@
 
   .competence-card {
     background: white !important;
-    border-radius: 20px !important;
+    border-radius: 15px !important;
     padding: 2rem !important;
     text-align: center !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
