@@ -50,7 +50,7 @@
 
   main {
     color: black;
-    font-family: "Tinos";
+    font-family: "Raleway";
     font-size: var(--normal-font-size);
     background-color: #DFDCEE;
   }
@@ -539,7 +539,6 @@
   }
 
   .hero-subtitle {
-    font-family: "Tinos", sans-serif;
     margin-bottom: 20px;
   }
 
@@ -555,7 +554,7 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
-    font-family: "Oswald";
+    font-family: "Cabin";
   }
 
   .cv-button i {
@@ -579,68 +578,6 @@
   }
 
   /* ================= ABOUT ==================== */
-  .timeline-wrapper {
-    position: relative;
-    margin-bottom: 3rem;
-  }
-
-  .timeline-line {
-    position: absolute;
-    top: 12px;
-    left: -30px;
-    right: -30px;
-    height: 3px;
-    background: #102B53;
-    z-index: 1;
-  }
-
-  .timeline-line::after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-left: 12px solid #102B53;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-  }
-
-  .timeline-dots {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    z-index: 2;
-  }
-
-  .timeline-dot-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  .timeline-dot {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: white;
-    border: 4px solid #7d9bcf;
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-
-  .timeline-dot-wrapper:last-child .timeline-dot {
-    border-color: #7d9bcf;
-    box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.1);
-  }
-
-  .timeline-dot:hover {
-    transform: scale(1.3);
-    box-shadow: 0 0 0 6px rgba(0, 123, 255, 0.2);
-  }
-
   .formations-grid {
     display: flex;
     gap: 30px;
@@ -656,7 +593,7 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(172, 147, 98, 0.1);
     transition: all 0.3s ease;
-    width: 620px;
+    width: 420px;
     height: 280px;
     display: flex;
     flex-direction: column;
@@ -711,28 +648,25 @@
   }
 
   .formation-date {
-    color: #3A60A0;
-    font-weight: 500;
+    display: inline-block;
+    background: #88A5E0;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(172, 147, 98, 0.25);
   }
 
-  .formation-description {
+  .formation-lieu {
     color: #555;
     line-height: 1.6;
     font-size: 0.95rem;
   }
 
-  @media (max-width: 768px) {
-
-    .timeline-dots,
-    .formations-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .timeline-line {
-      display: none;
-    }
-  }
 
   /*=============== PICKER + CONTENT DISPLAY (PROJECTS) ===============*/
   .floating-picker {
@@ -1023,8 +957,8 @@
   }
 
   .vtech-item {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: white;
+    border: 1px solid rgba(172, 147, 98, 0.1);
     border-radius: 20px;
     padding: 25px 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -1033,8 +967,8 @@
   }
 
   .vtech-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(14, 20, 31, 0.25);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(172, 147, 98, 0.15);
   }
 
   .vtech-title {
@@ -1085,132 +1019,192 @@
   }
 
   /* ===================== COMPETENCES ==================== */
-  /* === GRILLE 4 CARTES + LIGNE CENTRALE === */
-  .skills-grid-container {
-    position: relative !important;
-    padding: 0 2rem !important;
-  }
+/* Container des compétences */
+.skills-grid-container {
+  position: relative;
+  padding: 0 2rem;
+}
 
+/* Cartes de compétences */
+.skill-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(172, 147, 98, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(172, 147, 98, 0.15);
+}
+
+/* Icône principale de la card */
+.skill-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Grille des technologies */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* Item de technologie */
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Nom de la technologie (en haut) */
+.tech-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 15px 0;
+}
+
+/* Logo (au centre) */
+.tech-logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.tech-logo i {
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+
+/* Niveau de compétence (en bas) */
+.tech-level {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Niveaux de compétence - Couleurs */
+.tech-level-beginner {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffc107;
+}
+
+.tech-level-intermediate {
+  background: #cfe2ff;
+  color: #084298;
+  border: 1px solid #0d6efd;
+}
+
+.tech-level-advanced {
+  background: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #198754;
+}
+
+/* Couleurs des icônes Frontend */
+.ri-html5-fill {
+  color: #E34F26;
+}
+
+.ri-css3-fill {
+  color: #0073ff;
+}
+
+.ri-bootstrap-fill {
+  color: #7952B3;
+}
+
+.ri-javascript-fill {
+  color: #F0DB4F;
+}
+
+.ri-angularjs-fill {
+  color: #DD0031;
+}
+
+/* Couleurs des icônes Backend */
+.ri-java-line {
+  color: #007396;
+}
+
+.fa-php {
+  color: #777BB4;
+}
+
+.fa-python {
+  color: #3776AB;
+}
+
+/* Couleurs des icônes Database */
+.fa-server {
+  color: #00758F;
+}
+
+.ri-database-fill {
+  color: #336791;
+}
+
+/* Couleurs des icônes principales par carte */
+.frontend-card .skill-icon {
+  color: #E34F26;
+}
+
+.backend-card .skill-icon {
+  color: #4B8BBE;
+}
+
+.database-card .skill-icon {
+  color: #00758F;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
   .vertical-divider {
-    position: absolute !important;
-    top: 0 !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 3px !important;
-    height: 100% !important;
-    background: #143887;
-    z-index: 1 !important;
+    display: none;
   }
 
-  /* Cartes */
+  .skills-grid-container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
   .skill-card {
-    background: white !important;
-    border-radius: 20px !important;
-    padding: 2rem !important;
-    text-align: center !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
-    border: 1px solid rgba(172, 147, 98, 0.1) !important;
-    transition: all 0.3s ease !important;
-    height: 100% !important;
+    padding: 1.5rem;
   }
-
-  .skill-card:hover {
-    transform: translateY(-10px) !important;
-    box-shadow: 0 20px 40px rgba(172, 147, 98, 0.15) !important;
+  
+  .tech-logo i {
+    font-size: 2.5rem;
   }
-
-  .skill-icon {
-    font-size: 3rem !important;
-    margin-bottom: 1.5rem !important;
-    display: block !important;
-  }
-
-  .skill-title {
-    font-size: 1.5rem !important;
-    font-weight: 600 !important;
-    color: #2c3e50 !important;
-    margin-bottom: 1rem !important;
-  }
-
-  .tech-list {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  .tech-list li {
-    font-size: 1rem !important;
-    color: #555 !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-  }
-
-  .tech-list i {
-    font-size: 1.3rem !important;
-  }
-
-  /* Couleurs par carte */
-  .frontend-card .skill-icon {
-    color: #E34F26 !important;
-  }
-  /* ICON COLORS */
-  .ri-html5-fill {
-    color: #E34F26 !important;
-  }
-
-  .ri-css3-fill {
-    color:#0073ff !important;
-  }
-
-  .ri-bootstrap-fill {
-    color: #7952B3 !important;
-  }
-
-  .ri-javascript-fill {
-    color: #F0DB4F !important;
-  }
-
-  .ri-angularjs-fill {
-    color: #DD0031 !important;
-  }
-
-  .backend-card .skill-icon {
-    color: #4B8BBE !important;
-  }
-
-  /* ICON COLORS */
-  .ri-java-line {
-    color: #4B8BBE !important;
-  }
-
-  .fa-php {
-    color: #787CB5 !important;
-  }
-
-  .fa-python {
-    color: #FFD43B !important;
-  }
-
-  .database-card .skill-icon {
-    color: #336791 !important;
-  }
-
-  .tools-card .skill-icon {
-    color: #AC9362 !important;
-  }
-
-  /* Responsive : ligne disparait + 1 colonne */
-  @media (max-width: 992px) {
-    .vertical-divider {
-      display: none !important;
-    }
-
-    .skills-grid-container {
-      padding: 0 !important;
-    }
-  }
-
+}
+  
+/* ==================== GLPI ======================= */
   .competence-card {
     background: white !important;
     border-radius: 15px !important;
