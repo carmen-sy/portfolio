@@ -71,8 +71,8 @@ filterButtons.forEach((button) => {
       if (filter === "all") {
         card.parentElement.style.display = "block";
       } else if (
-        (filter === "formation" && category === "En formation") ||
-        (filter === "stage" && category === "Stage")
+        (filter === "formation" && category === "Réalisation professionnelle") ||
+        (filter === "entreprise" && category === "Formation en entreprise")
       ) {
         card.parentElement.style.display = "block";
       } else {
