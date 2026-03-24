@@ -1052,55 +1052,62 @@
 
 /* Grille des technologies */
 .tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  text-align: left;
 }
 
 /* Item de technologie */
 .tech-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  border-radius: 15px;
+  justify-content: space-between;
+  padding: 6px 10px;
+  border-radius: 8px;
   transition: all 0.3s ease;
+  background: transparent;
+}
+
+.tech-item:hover {
+  background: #f8f9fa;
+  transform: translateX(3px);
 }
 
 /* Nom de la technologie (en haut) */
 .tech-name {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 500;
   color: #2c3e50;
-  margin: 0 0 15px 0;
+  margin: 0;
 }
 
 /* Logo (au centre) */
 .tech-logo {
-  width: 60px;
-  height: 60px;
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
+  flex-shrink: 0;
 }
 
 .tech-logo i {
-  font-size: 3rem;
+  font-size: 1.3rem;
   transition: all 0.3s ease;
 }
 
 /* Niveau de compétence (en bas) */
 .tech-level {
   display: inline-block;
-  padding: 4px 12px;
-  border-radius: 15px;
-  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.65rem;
   font-weight: 600;
-  margin-top: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+  flex-shrink: 0;
 }
 
 /* Niveaux de compétence - Couleurs */
