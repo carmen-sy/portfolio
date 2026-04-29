@@ -831,6 +831,22 @@
 
   .project-tech {
     margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project-tech-2 {
+    margin: 20px 0;
+  }
+
+  .tech-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    flex: 1;
   }
 
   .tech-tag {
@@ -844,6 +860,19 @@
     margin: 3px 6px 3px 0;
     border: 1px solid rgba(172, 147, 98, 0.2);
     transition: all 0.3s ease;
+  }
+
+  .tech-tag-btn {
+    background: transparent;
+    color: #102B53;
+    border: 1px solid #102B53;
+  }
+
+  .tech-tag-btn:hover {
+    background: linear-gradient(135deg, #4E7AB1, #102B53);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(172, 147, 98, 0.3);
   }
 
   .tech-tag-2 {
@@ -1019,199 +1048,199 @@
   }
 
   /* ===================== COMPETENCES ==================== */
-/* Container des compétences */
-.skills-grid-container {
-  position: relative;
-  padding: 0 2rem;
-}
-
-/* Cartes de compétences */
-.skill-card {
-  background: white;
-  border-radius: 20px;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(172, 147, 98, 0.1);
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-.skill-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(172, 147, 98, 0.15);
-}
-
-/* Icône principale de la card */
-.skill-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-}
-
-/* Grille des technologies */
-.tech-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 20px;
-  text-align: left;
-}
-
-/* Item de technologie */
-.tech-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 6px 10px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  background: transparent;
-}
-
-.tech-item:hover {
-  background: #f8f9fa;
-  transform: translateX(3px);
-}
-
-/* Nom de la technologie (en haut) */
-.tech-name {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #2c3e50;
-  margin: 0;
-}
-
-/* Logo (au centre) */
-.tech-logo {
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.tech-logo i {
-  font-size: 1.3rem;
-  transition: all 0.3s ease;
-}
-
-/* Niveau de compétence (en bas) */
-.tech-level {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 10px;
-  font-size: 0.65rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  flex-shrink: 0;
-}
-
-/* Niveaux de compétence - Couleurs */
-.tech-level-beginner {
-  background: #fff3cd;
-  color: #856404;
-  border: 1px solid #ffc107;
-}
-
-.tech-level-intermediate {
-  background: #cfe2ff;
-  color: #084298;
-  border: 1px solid #0d6efd;
-}
-
-.tech-level-advanced {
-  background: #d1e7dd;
-  color: #0f5132;
-  border: 1px solid #198754;
-}
-
-/* Couleurs des icônes Frontend */
-.ri-html5-fill {
-  color: #E34F26;
-}
-
-.ri-css3-fill {
-  color: #0073ff;
-}
-
-.ri-bootstrap-fill {
-  color: #7952B3;
-}
-
-.ri-javascript-fill {
-  color: #F0DB4F;
-}
-
-.ri-angularjs-fill {
-  color: #DD0031;
-}
-
-/* Couleurs des icônes Backend */
-.ri-java-line {
-  color: #007396;
-}
-
-.fa-php {
-  color: #777BB4;
-}
-
-.fa-python {
-  color: #3776AB;
-}
-
-/* Couleurs des icônes Database */
-.fa-server {
-  color: #00758F;
-}
-
-.ri-database-fill {
-  color: #336791;
-}
-
-/* Couleurs des icônes principales par carte */
-.frontend-card .skill-icon {
-  color: #E34F26;
-}
-
-.backend-card .skill-icon {
-  color: #4B8BBE;
-}
-
-.database-card .skill-icon {
-  color: #00758F;
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .vertical-divider {
-    display: none;
-  }
-
+  /* Container des compétences */
   .skills-grid-container {
-    padding: 0;
+    position: relative;
+    padding: 0 2rem;
   }
-}
 
-@media (max-width: 768px) {
-  .tech-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-  
+  /* Cartes de compétences */
   .skill-card {
-    padding: 1.5rem;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(172, 147, 98, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
   }
-  
+
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(172, 147, 98, 0.15);
+  }
+
+  /* Icône principale de la card */
+  .skill-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+
+  /* Grille des technologies */
+  .tech-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  /* Item de technologie */
+  .tech-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: transparent;
+  }
+
+  .tech-item:hover {
+    background: #f8f9fa;
+    transform: translateX(3px);
+  }
+
+  /* Nom de la technologie (en haut) */
+  .tech-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #2c3e50;
+    margin: 0;
+  }
+
+  /* Logo (au centre) */
+  .tech-logo {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
   .tech-logo i {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
   }
-}
-  
-/* ==================== GLPI ======================= */
+
+  /* Niveau de compétence (en bas) */
+  .tech-level {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    flex-shrink: 0;
+  }
+
+  /* Niveaux de compétence - Couleurs */
+  .tech-level-beginner {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffc107;
+  }
+
+  .tech-level-intermediate {
+    background: #cfe2ff;
+    color: #084298;
+    border: 1px solid #0d6efd;
+  }
+
+  .tech-level-advanced {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #198754;
+  }
+
+  /* Couleurs des icônes Frontend */
+  .ri-html5-fill {
+    color: #E34F26;
+  }
+
+  .ri-css3-fill {
+    color: #0073ff;
+  }
+
+  .ri-bootstrap-fill {
+    color: #7952B3;
+  }
+
+  .ri-javascript-fill {
+    color: #F0DB4F;
+  }
+
+  .ri-angularjs-fill {
+    color: #DD0031;
+  }
+
+  /* Couleurs des icônes Backend */
+  .ri-java-line {
+    color: #007396;
+  }
+
+  .fa-php {
+    color: #777BB4;
+  }
+
+  .fa-python {
+    color: #3776AB;
+  }
+
+  /* Couleurs des icônes Database */
+  .fa-server {
+    color: #00758F;
+  }
+
+  .ri-database-fill {
+    color: #336791;
+  }
+
+  /* Couleurs des icônes principales par carte */
+  .frontend-card .skill-icon {
+    color: #E34F26;
+  }
+
+  .backend-card .skill-icon {
+    color: #4B8BBE;
+  }
+
+  .database-card .skill-icon {
+    color: #00758F;
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    .vertical-divider {
+      display: none;
+    }
+
+    .skills-grid-container {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tech-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .skill-card {
+      padding: 1.5rem;
+    }
+
+    .tech-logo i {
+      font-size: 2.5rem;
+    }
+  }
+
+  /* ==================== GLPI ======================= */
   .competence-card {
     background: white !important;
     border-radius: 15px !important;
