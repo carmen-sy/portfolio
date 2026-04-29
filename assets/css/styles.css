@@ -862,6 +862,19 @@
     transition: all 0.3s ease;
   }
 
+  .tech-btn {
+    display: inline-block;
+    background: #102B53;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 3px 6px 3px 0;
+    border: 1px solid rgba(172, 147, 98, 0.2);
+    transition: all 0.3s ease;
+  }
+
   .tech-tag-btn {
     background: transparent;
     color: #102B53;
@@ -1459,7 +1472,7 @@
   }
 
   /* ======== FOOTER ======== */
-  .footer {
+  /* .footer {
     font-family: "Merriweather", sans-serif;
     background-color: #0B1838;
     color: white;
@@ -1473,4 +1486,4 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
+  } */
